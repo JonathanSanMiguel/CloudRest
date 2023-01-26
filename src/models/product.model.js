@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
 const ProductSchema = mongoose.Schema({
+    image:{
+        public_id: String,
+        secure_url: String
+    },
     nombre: {
         type: String,
         require: true,
